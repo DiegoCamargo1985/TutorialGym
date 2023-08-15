@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+    <title>Tutorial</title>
+  </head>
+  <body>
+
+  <!--Inicion Encabezado-->
+    <header class="head">
+      <div class="titleOne">
+        <div class="marquesina"><h1>Aprende Rutinas de Gimnasio</h1></div></div>
+      <div class="imagenOne"><img src="./imagenes/logoEmpresa.png" alt="">
+        </div>
+    </header>
+
+<!--Inicio Grid de Imagenes-->
+    <div class="containerOne">
+      <div class="grid-container">
+        <div class="item" onclick="toggleContenido('contenido')">
+          <div class="imagenTwo">
+            <img src="./imagenes/pechoGym.jpg" alt="pecho" />
+            <div class="text"><p>Rutina Pecho</p></div>
+          </div>
+        </div>
+        <div class="item" onclick="toggleContenido('contenidoOne')">
+          <div class="imagenTwo">
+            <img src="./imagenes/piernaGym.jpg" alt="pecho" />
+            <div class="text"><p>Rutina Pierna</p></div>
+          </div>
+        </div>
+        <div class="item" onclick="toggleContenido('contenidoTwo')">
+          <div class="imagenTwo">
+            <img src="./imagenes/espaldaGym.jpg" alt="pecho" />
+            <div class="text"><p>Rutina Espalda</p></div>
+          </div>
+        </div>
+        <div class="item" onclick="toggleContenido('contenidoThree')">
+          <div class="imagenTwo">
+            <img src="./imagenes/bicepsGym.jpg" alt="pecho" />
+            <div class="text"><p>Rutina Brazos</p></div>
+          </div>
+        </div>
+        <div class="item" onclick="toggleContenido('contenidoFourt')">
+          <div class="imagenTwo">
+            <img src="./imagenes/cardioGym.jpg" alt="pecho" />
+            <div class="text"><p>Cardio</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Fin grid de Imagenes-->
+
+<!--Inicio contenido de las imagenes -->
+<div class="result">
+<div id="contenido" class="contenido-oculto">
+  <div class="contOne">
+    <div class="BoxOne">
+      <header class="HeadBox"><h2>Rutina de Pecho</h2></header>
+      <ul>
+      <li>Press de Banco - 4 series x 8-10 repeticiones</li>
+      <li>Press de Banco Inclinado - 3 series x 10-12 repeticiones</li>
+      <li>Aperturas con Mancuernas - 3 series x 12-15 repeticiones</li>
+      <li>Flexiones - 2 series x máximo de repeticiones (hasta el fallo muscular)</li>
+    </ul></div>
+    <div class="BoxTwo"><video controls autoplay loop muted class="video" src="./video/pecho.mp4"></video></div>
+</div>
+  
+</div>
+<div id="contenidoOne" class="contenido-oculto">
+  <div class="contOne">
+    <div class="BoxOne"><header class="HeadBox"><h2>Rutina de Pierna</h2></header><ul>
+      <li>Sentadillas- 4 series x 8-10 repeticiones - Descanso: 60-90 segundos</li>
+      <li>Prensa de Piernas - 3 series x 10-12 repeticiones - Descanso: 60-90 segundos</li>
+      <li>Extensiones de Cuádriceps - 3 series x 12-15 repeticiones - Descanso: 45-60 segundos</li>
+      </div>
+    
+    <div class="BoxTwo"><video controls autoplay loop muted class="video" src="./video/pierna.mp4"></video></div>
+  <</div>
+  
+</div>
+<div id="contenidoTwo" class="contenido-oculto">
+  <div class="contOne">
+    <div class="BoxOne"><header class="HeadBox"><h2>Rutina de Espalda</h2></header>
+      <ul>
+        <li>Dominadas o Pull-Ups - 4 series x 6-8 repeticiones - Descanso: 60-90 segundos</li>
+        <li>Remo con Barra T - 3 series x 8-10 repeticiones - Descanso: 60-90 segundos</li>
+        <li>Pulldown en Polea Alta - 3 series x 10-12 repeticiones - Descanso: 45-60 segundos</li>
+        </ul></div>
+    <div class="BoxTwo"><video controls autoplay loop muted class="video" src="./video/espalda.mp4"></video></div>
+  </div>
+  
+</div>
+<div id="contenidoThree" class="contenido-oculto">
+  <div class="contOne">
+    <div class="BoxOne"><header class="HeadBox"><h2>Rutina de Brazos</h2></header>
+      <ul>
+        <li>Curl de Bíceps con Barra - 4 series x 8-10 repeticiones - Descanso: 60-75 segundos</li>
+        <li>Curl de Martillo con Mancuernas - 3 series x 10-12 repeticiones - Descanso: 45-60 segundos</li>
+        <li>Extensiones de Tríceps en Polea Alta - 4 series x 10-12 repeticiones - Descanso: 60-75 segundos</li>
+        </ul></div>
+    <div class="BoxTwo"><video controls autoplay loop muted class="video" src="./video/brazos.mp4"></video>
+    </div>
+  </div>
+  
+</div>
+<div id="contenidoFourt" class="contenido-oculto">
+  <div class="contOne">
+    <div class="BoxOne"><header class="HeadBox"><h2>Rutina de Cardio</h2></header>
+      <ul>
+        <li>Calentamiento - Camina a una velocidad moderada durante 5-10 minutos para elevar gradualmente tu ritmo cardíaco.</li>
+        <li>Carrera Moderada - Corre a un ritmo constante y moderado durante 10 minutos. Velocidad: 8-10 km/h</li>
+        <li>Carrera Moderada - Corre a un ritmo constante y moderado durante 5-10 minutos. Velocidad: 8-10 km/h </li>
+        </ul></div>
+    <div class="BoxTwo"><video controls autoplay loop muted class="video" src="./video/cardio.mp4"></video></div>
+  </div>
+  
+</div>
+</div>
+</body>
+</html>
